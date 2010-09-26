@@ -12,6 +12,8 @@ ul { margin: 0; }
     width: 78em;
     margin: 2em auto 0;
     font-size: 0.7em;
+    margin: 40px auto;
+    padding-top: 8px;
 }
 
 a { color: #888888;} 
@@ -19,7 +21,7 @@ a { color: #888888;}
 #site {
     margin: 0 auto;
     width: 53em;
-    min-height:53em;
+    /*min-height:53em;*/
     position: relative;
 }
 
