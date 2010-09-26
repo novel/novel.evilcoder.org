@@ -1,0 +1,56 @@
+{% extends "_page.html" %}
+{%hyde
+    title: "Projects"
+%}
+{% block article %}
+
+# Own projects
+
+## Actual
+
+### cdf
+
+[cdf][] is a *c*olorful *df*, written in C with help of
+_Pierre Chifflier_. I haven't updated for a long time,
+but it works fine still.
+
+[cdf]: http://bmp-plugins.berlios.de/misc/cdf/cdf.html
+
+# Contributor
+
+## Actual
+## Past
+
+List of projects I've used to contribute to:
+
+### Torsmo and Conky
+
+I've first seen [Torsmo][] back in 2004. It only supported Linux and I decided
+to create a port for FreeBSD. I had to re-implement all the monitoring stuff
+for FreeBSD. At that time torsmo was not supported by its maintainers already,
+so I just kept all the patches in the port.
+
+Later on [Torsmo][] was finally forked, new project was called [Conky][]. I 
+happened to get a commit access and imported all my patches. For few years
+I've been supporting FreeBSD specific features, did a basic bugfixing, added
+some new features. At some point I changed the way I work with my computer
+and stopped using conky, therefore stopped supporting conky and passed
+maintainership to other person.
+
+[Torsmo]: http://torsmo.sourceforge.net/
+[Conky]: http://conky.sf.net
+
+### PearPC
+
+[PearPC][] is a PowerPC emulator, a very interesting project. I've been only
+improving portability of GNU autotools based build system. Unfortunately,
+the project doesn't seem to be active anymore.
+
+[PearPC]: http://pearpc.sourceforge.net/
+
+{% endblock %}
+
+
+
+
+
