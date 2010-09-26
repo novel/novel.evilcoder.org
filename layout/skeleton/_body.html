@@ -6,16 +6,18 @@
 {% block sitenav %}
 <div id="sitenav">
     <ul>
-        <li{% ifequal page.module site.module %} class="selected" {% endifequal %}>
-            <a href="{{site.listing_url}}">Home</a>
-        </li>    
-        {% for module in site.children %}
-        <li{% ifequal page.module module %} class="selected" {% endifequal %}>
-            <a href="{{module.listing_url}}">
-                {{module.name|unslugify}}
-            </a>
-        </li>
-        {% endfor %}
+	<li>
+	  <a href="/projects/">Projects</a>
+	</li>
+	<li>
+	  <a href="/writings/">Writings</a>
+	</li>
+	<li>
+	  <a href="/cars/">Cars</a>
+	</li>
+	<li>
+	  <a href="/about/about.html">About</a>
+	<li>
     </ul>
 </div>
 {% endblock %}
