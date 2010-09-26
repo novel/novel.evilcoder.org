@@ -13,9 +13,9 @@ BACKUPS_DIR = os.path.join(ROOT_PATH, 'backups')
 BACKUP = False
 
 SITE_ROOT = "/"
-SITE_WWW_URL = "http://www.yoursite.com"
-SITE_NAME = "Your Site"
-SITE_AUTHOR = "Your Name"
+SITE_WWW_URL = "http://novel.evilcoder.org"
+SITE_NAME = "Roman Bogorodskiy"
+SITE_AUTHOR = "Roman Bogorodskiy"
 
 #Url Configuration
 GENERATE_ABSOLUTE_FS_URLS = False
