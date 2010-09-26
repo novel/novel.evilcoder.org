@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    color: #647a90;
+    color: #888888;
 }
 
 ul { margin: 0; }
@@ -14,7 +14,7 @@ ul { margin: 0; }
     font-size: 0.7em;
 }
 
-a { color: #55757B; }
+a { color: #888888;} 
 
 #site {
     margin: 0 auto;
@@ -41,7 +41,7 @@ a { color: #55757B; }
 #header h1 {
     padding-left: 1em;
     margin: 0;
-    color: #55757B;
+    /*color: #55757B;*/
 }
 
 .context-nav,
@@ -68,7 +68,7 @@ ul.breadcrumbs {
 
 #sitenav {
     text-align: center;
-    border-bottom: .2em solid #4d6680;
+    /*border-bottom: .2em solid #4d6680;*/
     padding-bottom: 0.2em;
 }
 
@@ -82,7 +82,7 @@ ul.breadcrumbs {
 #sitenav a {
     text-decoration: none;
     padding: 0.2em;
-    background-color: #b5cce3;
+/*    background-color: #b5cce3;*/
     color: #4d6680;
 }
 
