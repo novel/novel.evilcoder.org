@@ -8,7 +8,7 @@ ul { margin: 0; }
 
 #footer {
     text-align: center;
-    border-top: 1px solid #b5cce3;
+    border-top: 1px solid #888888;
     width: 78em;
     margin: 2em auto 0;
     font-size: 0.7em;
@@ -60,7 +60,7 @@ ul.breadcrumbs {
 }
 
 .context-nav a {
-    color: #4D6680;
+    color: #888888;
 }
 
 .breadcrumbs a:hover { text-decoration: underline; }
@@ -69,7 +69,10 @@ ul.breadcrumbs {
 #sitenav {
     text-align: center;
     /*border-bottom: .2em solid #4d6680;*/
-    padding-bottom: 0.2em;
+/*    padding-bottom: 0.2em;*/
+    padding: 0.2em;
+    background-color: #BBBBBB;
+    color: white;
 }
 
 #sitenav ul { list-style-type: none; }
@@ -83,7 +86,11 @@ ul.breadcrumbs {
     text-decoration: none;
     padding: 0.2em;
 /*    background-color: #b5cce3;*/
-    color: #4d6680;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 #sitenav .selected a {

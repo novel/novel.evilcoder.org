@@ -1,19 +1,30 @@
 {% extends "skeleton/_body.html" %}
 {%hyde
-    title: "Hyde : Ready for customization"
+    title: "Home"
     created: 2009-02-01 18:09:05
     listing: True
 %}
 
+{% block extra_js %}
+   <script src="{{site.url}}/media/js/recentposts.js"></script>
+{% endblock %}
+
 {% block content_body %}
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+   var scriptElement = document.createElement('script');
+   scriptElement.setAttribute('type', 'text/javascript');
+   scriptElement.setAttribute('src', "http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=recentPosts");
+   document.documentElement.firstChild.appendChild(scriptElement);
+});
+
+</script>
+
 <h2>Recent Posts</h2>
 
-{%recent_posts recents 5 %}
-<ul>
-{%for post in recents %}
-<li>
-<a href='{{post.url}}'>{{post.title}}</a>
-</li>
-{%endfor%}
+<ul id="envlist">
 </ul>
+
 {%endblock%}
