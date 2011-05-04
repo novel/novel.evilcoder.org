@@ -17,7 +17,7 @@
 $(document).ready(function(){
    var scriptElement = document.createElement('script');
    scriptElement.setAttribute('type', 'text/javascript');
-   scriptElement.setAttribute('src', "http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=recentPosts");
+   scriptElement.setAttribute('src', "http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=novel.recentBlogPosts");
    document.documentElement.firstChild.appendChild(scriptElement);
 });
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 <h2>Recent Posts</h2>
 
-<ul id="envlist">
+<ul id="recentblogposts">
 </ul>
 
 <p>Please check <a href="http://empt1e.blogspot.com/">my blog</a> for more posts.</p>
