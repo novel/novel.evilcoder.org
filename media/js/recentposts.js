@@ -1,8 +1,8 @@
-var numposts = 10;
-
 var novel = {
+        numposts: 10,
+
 	recentBlogPosts: function(json) {
-		for (var i = 0; i < 10 /* num posts */; i++) {
+		for (var i = 0; i < novel.numposts; i++) {
 			var post = json.feed.entry[i];
 			var postTitle = post.title.$t;
 			var tags = '';

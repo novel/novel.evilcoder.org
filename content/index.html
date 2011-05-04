@@ -13,12 +13,9 @@
 {% block content_body %}
 
 <script type="text/javascript">
-
 $(document).ready(function(){
-   var scriptElement = document.createElement('script');
-   scriptElement.setAttribute('type', 'text/javascript');
-   scriptElement.setAttribute('src', "http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=novel.recentBlogPosts");
-   document.documentElement.firstChild.appendChild(scriptElement);
+	$.getJSON("http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=?",
+		novel.recentBlogPosts);
 });
 
 </script>
