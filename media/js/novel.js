@@ -26,5 +26,11 @@ var novel = {
 
 			$("<li><a href='" + postLink + "'>" + postTitle + "</a> (" + tags + ")</li>").appendTo("#recentblogposts");
 		}
-	}
+	},
+
+        recentTweets: function(json) {
+		$(json).each(function(i, tweet) {
+			$("<li>" + tweet.text + "</li>").appendTo("#recenttweets");
+                });
+	}		
 };

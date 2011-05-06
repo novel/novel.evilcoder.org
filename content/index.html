@@ -7,7 +7,7 @@
 
 {% block extra_js %}
   <script type="text/javascript"
-    src="{{site.url}}/media/js/recentposts.js"></script>
+    src="{{site.url}}/media/js/novel.js"></script>
 {% endblock %}
 
 {% block content_body %}
@@ -16,8 +16,9 @@
 $(document).ready(function(){
 	$.getJSON("http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=?",
 		novel.recentBlogPosts);
+	$.getJSON("http://twitter.com/status/user_timeline/mirrorboo.json?count=5&callback=?",
+		novel.recentTweets);
 });
-
 </script>
 
 <h2>Recent Posts</h2>
@@ -25,6 +26,13 @@ $(document).ready(function(){
 <ul id="recentblogposts">
 </ul>
 
-<p>Please check <a href="http://empt1e.blogspot.com/">my blog</a> for more posts.</p>
+<p>Please check <a href="http://empt1e.blogspot.com/" target="_blank">my blog</a> for more posts.</p>
+
+<h2>Recent Tweets</h2>
+
+<ul id="recenttweets">
+</ul>
+
+<p>Follow me on twitter: <a href="http://twitter.com/mirrorboo" target="_blank">@mirrorboo</a>.</p>
 
 {%endblock%}
