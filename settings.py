@@ -100,6 +100,8 @@ FILTER = {
 }        
 
 
+MD_EXTENSIONS = ['toc']
+
 #Processor Configuration 
 
 # 

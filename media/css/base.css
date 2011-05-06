@@ -121,3 +121,7 @@ ul.breadcrumbs {
     font-size:.8em;
     
 }
+
+#post-content .toc {
+	padding-top: 10px;
+}
