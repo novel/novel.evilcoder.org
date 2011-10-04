@@ -1,6 +1,7 @@
 HYDE?=	hyde.py
 TIDY?=	tidy -qe
 FIND?=	find
+ADDRESS?=	127.0.0.1
 
 clean:
 	rm -fr deploy
@@ -15,7 +16,7 @@ validate: generate
 	done
 
 serve: generate
-	${HYDE} -w -k -s .
+	${HYDE} -a ${ADDRESS} -w -k -s .
 
 upload: generate
 	./upload.sh
