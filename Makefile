@@ -1,4 +1,4 @@
-HYDE?=	hyde.py
+HYDE?=	hyde
 TIDY?=	tidy -qe
 FIND?=	find
 ADDRESS?=	127.0.0.1
@@ -7,7 +7,7 @@ clean:
 	rm -fr deploy
 
 generate: clean
-	${HYDE} -g -s .
+	${HYDE} -s . gen
 
 validate: generate
 	@for html in `${FIND} deploy -name "*.html"|xargs`; do \
@@ -16,7 +16,7 @@ validate: generate
 	done
 
 serve: generate
-	${HYDE} -a ${ADDRESS} -w -k -s .
+	${HYDE} -s . serve -a ${ADDRESS}
 
 upload: generate
 	./upload.sh
