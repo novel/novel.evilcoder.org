@@ -13,4 +13,8 @@ plugins:
 context:
     data:
         site:
-            name: Roman Bogorodskiy 
+            name: Roman Bogorodskiy
+
+markdown:
+    extensions:
+        - markdown.extensions.toc
