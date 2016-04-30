@@ -14,8 +14,6 @@ title: Home
 $(document).ready(function(){
 	$.getJSON("http://empt1e.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&callback=?",
 		novel.recentBlogPosts);
-	$.getJSON("http://twitter.com/status/user_timeline/mirrorboo.json?count=5&callback=?",
-		novel.recentTweets);
 });
 </script>
 
@@ -28,9 +26,11 @@ $(document).ready(function(){
 
 <h2>Recent Tweets</h2>
 
-<ul id="recenttweets">
-</ul>
-
-<p>Follow me on twitter: <a href="http://twitter.com/mirrorboo" target="_blank">@mirrorboo</a>.</p>
-
+<a class="twitter-timeline" data-dnt="true"
+  href="https://twitter.com/rbogorodskiy"
+  data-widget-id="726455813628375040"
+  data-chrome="noheader nofooter"
+  data-tweet-limit="3">Tweets by @rbogorodskiy</a>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			          
 {%endblock%}
