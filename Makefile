@@ -1,5 +1,5 @@
 HYDE?=	hyde
-TIDY?=	tidy -qe
+TIDY?=	tidy4 -qe
 FIND?=	find
 ADDRESS?=	127.0.0.1
 
